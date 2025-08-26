@@ -11,18 +11,21 @@ Projenin temel amacı bir şarabın kalitesini etkileyen faktörlerin arasındak
 * **NumPy**
 * **Seaborn & Matplotlib**
 
-## Analizler ve Görselleştirmeler
+## Analizler ve Görsel Grafikler
 
 ### Korelasyon Matrisi
 Tüm kimyasal özelliklerin birbirleriyle olan ilişkisini gösteren bir heatmap'tir. Bu grafik sayesinde şarap kalitesiyle en güçlü pozitif ve negatif korelasyona sahip özellikleri hızlıca tespit edebiliriz.
+
 ![Korelasyon Matrisi](images/correlation_matrix.png)
 
 ### Kaliteye Göre Şarap Sayıları
 Bu grafikte farklı kalite derecelerine sahip şarapların veri setindeki dağılımını özetler. Her bir çubuk belirli bir kalite puanına (5, 6 veya 7 gibi) sahip şarapların toplam sayısını temsil eder. Bu sayede veri setindeki en yaygın ve en nadir şarap kalitesi puanlarını hızlıca görmemizi sağlar.
+
 ![Kaliteye Göre Şarap Sayısı](images/number_of_wines_by_quality.png)
 
 ### Alkol Oranına Göre Şarap Sayıları
 Benzer şekilde bu grafik farklı alkol oranlarına göre şarapların veri setindeki dağılımını özetler.
+
 ![Alkol Oranına Göre Şarap Sayıları](images/number_of_wines_by_alcohol.png)
 
 ### Değişkenlerin Pairplot ile Korelasyon Analizi
@@ -43,15 +46,17 @@ Bu grafik farklı kalite puanlarına (örneğin, 5, 6, 7) sahip şarapların alk
 * Aykırı Değerler: Bıyıkların (Whisker) dışında kalan noktalar o kalite için normalden çok daha yüksek veya düşük alkol seviyelerine sahip şarapları gösterir. (Outlier Veriler)
 
 Bu görselleştirme özellikle alkol içeriği yükseldikçe şarap kalitesinin de artıp artmadığını incelemek için kullanışlıdır. Grafik sayesinde, yüksek kaliteli şarapların (7 ve 8 puanlı şaraplar gibi) genellikle daha yüksek alkol içeriğine sahip olup olmadığı gibi eğilimleri kolayca gözlemleyebiliriz.
+
 ![Şarapların Box Plot ile Analizi](images/alcohol_quality_boxplot.png)
 
 ### Farklı Değişkenlerin Kaliteye Göre Dağılımları
 Her bir sütun için ("fixed acidity", "volatile acidity" gibi sütunlar) bir yoğunluk grafiği (KDE=Kernel Density Estimate) çizer. Ayrıca her bir yoğunluk grafiği farklı şarap kalitesine göre renklendirilir.
 
 Her bir özelliğin dağılımını gözlemleyebiliriz ve verinin o özellik için nasıl yığılma gösterdiğini görmemize imkan tanır.
+
 ![Farklı Değişkenlerin Kaliteye Göre Dağılımları](images/distribution_by_quality.png)
 
-## Kurulum ve Çalıştırma
+## Projenin Çalıştırılması
 Eğer projeyi kendi bilgisayarınızda çalıştırmak isterseniz aşağıdaki adımları izleyebilirsiniz:
 
 1.  Bu repoyu bilgisayarınıza klonlayın:
